@@ -1,51 +1,109 @@
 body {
-  background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   /* height: 100%; */
-   /* margin: 0; */
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   font-size:12px;
+  /* margin: 0; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 14px !important;
+  color: hsl(238, 29%, 16%) !important;
+  font-family: 'Kumbh Sans' !important;
 }
 
 h1 {
-  color: hsl(238, 29%, 16%);
-  padding-bottom: 30px;
+  /* color: hsl(238, 29%, 16%); */
+  padding-bottom: 20px;
+  position: relative;
+  left: 20px;
+  font-weight: bold !important;
 }
 
 h2 {
-  color: hsl(238, 29%, 16%);
-
+  /* color: hsl(238, 29%, 16%); */
 }
 
-.row{
-  padding-left:50px;
-  padding-right:50px;
+.row {
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 50px;
 }
+
+
 .container {
-  margin:2%;
-    border: 1px ;
-    border-radius: 25px;
-    padding: 45px;
-    background-color:white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* text-align:left; */
+  margin: 2% 20%;
+  border: 1px;
+  border-radius: 25px;
+  padding: 50px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80% !important;
+  overflow: hidden;
+  /* text-align:left; */
 }
 
-.accordion-button{
-    font-size:12px;
-    font-weight:bold;
+ .box-image {
+   width:200px !important;
+  height:184px !important;
+  position:absolute ;
+  bottom:9rem;
+left:-7rem;
+z-index:3;
+overflow:visible !important;
+}
+
+.accordion-column {
+  position:relative;
+right:2.5rem;
 
 }
-.accordion-button.collapsed{
-  font-weight:normal;
+
+.background-img {
+  position: absolute;
+  /* width:50% !important; */
+  z-index: 1;
+  left: -560px;
+  top: -230px;
+}
+
+.lady {
+  position: relative;
+  top: 60px;
+  left: -180px;
+  z-index: 2;
+  margin-top: 15px;
+}
+
+.accordion-button {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.accordion-body {
+  color: hsl(240, 6%, 50%);
+}
+
+.accordion-button.collapsed {
+  font-weight: normal;
+  color: hsl(237, 12%, 33%);
+}
+
+.accordion-button.collapsed:hover {
+  color: hsl(14, 88%, 65%);
 }
 
 .accordion-item {
-        border-top-width: 0px !important;
-        border-left-width:0px !important;
-        border-right-width: 0px !important;
+  border-top-width: 0px !important;
+  border-left-width: 0px !important;
+  border-right-width: 0px !important;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='hsl(14, 88%, 65%)'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+  color: black !important;
 }
