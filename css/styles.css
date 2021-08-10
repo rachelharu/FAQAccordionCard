@@ -22,8 +22,8 @@ h2 {
 }
 
 .row {
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
   padding-bottom: 50px;
 }
 
@@ -34,23 +34,39 @@ h2 {
   border-radius: 25px;
   padding: 50px;
   background-color: white;
-  position: absolute;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80% !important;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* text-align:left; */
+}
+.wrapper {
+  overflow: hidden;
+  padding-left: 100px !important; /* This is padding that was previously in .row */
+  padding-right: 100px !important; /* This is padding that was previously in .row */
+  padding-bottom: 65px;
+  height: inherit;
+  display: flex; /* This is important */
 }
 
  .box-image {
-   width:200px !important;
+   /* width:200px !important;
   height:184px !important;
-  position:absolute ;
-  bottom:9rem;
+  position:relative ;
+   bottom:9rem;
 left:-7rem;
 z-index:3;
-overflow:visible !important;
+overflow:visible !important; */
+
+width: 200px !important;
+  height: 184px !important;
+  position: absolute;
+  top: 17rem; /* This is new */
+    /* bottom: 9rem; */
+  left: -7rem;
+  z-index: 3;
 }
 
 .accordion-column {
