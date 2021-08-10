@@ -24,7 +24,7 @@ h2 {
 .row {
   /* padding-left: 100px;
   padding-right: 100px; */
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 
@@ -32,23 +32,26 @@ h2 {
   margin: 2% 20%;
   border: 1px;
   border-radius: 25px;
-  padding: 50px;
+  padding-top: 40px;
+  padding-bottom:0px;
   background-color: white;
   position:absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80% !important;
-  /* overflow: hidden; */
+  width: 70% !important;
+  /* overflow: hidden;  */
   /* text-align:left; */
 }
 .wrapper {
-  overflow: hidden;
+  position:relative;
+  overflow: hidden ;
   padding-left: 100px !important; /* This is padding that was previously in .row */
   padding-right: 100px !important; /* This is padding that was previously in .row */
   padding-bottom: 65px;
   height: inherit;
   display: flex; /* This is important */
+
 }
 
  .box-image {
