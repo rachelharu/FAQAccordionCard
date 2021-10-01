@@ -1,6 +1,8 @@
 # FAQAccordionCard
 An FAQ Accordion Card
 
+LIVE PREVIEW [https://faqa-ccordion-card.vercel.app/]
+
 Users should be able to: see hover states of accordion, interact with accordion.
 
 What I learned: 
